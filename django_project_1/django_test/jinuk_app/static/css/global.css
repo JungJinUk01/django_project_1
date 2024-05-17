@@ -1,0 +1,89 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+  
+html {
+    font-size: 62.5%;
+    font-family: "Noto Sans CJK KR";
+    overflow-x: hidden;
+}
+  
+input[type=date] {
+    font-family: "Noto Sans CJK KR";
+}
+  
+body {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+ 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+table {
+    border-spacing: 0;
+}
+  
+textarea {
+    resize: none;
+}
+  
+/* 스크롤바 설정*/
+html::-webkit-scrollbar {
+    position: absolute;
+    width: 1rem;
+}
+  
+  /* 스크롤바 막대 설정*/
+html::-webkit-scrollbar-thumb {
+    height: 17%;
+    background-color: #828282;
+    /* 스크롤바 둥글게 설정    */
+    border-radius: 10px;
+}
+  
+  /* 스크롤바 뒷 배경 설정*/
+html::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+  
+  
+
+/*trp*/
+.trp {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    min-width: 102.4rem;
+    min-height: 100vh;
+    height: auto;
+}
+
+/*trpMainContainer*/
+.MainContainer {
+    position: relative;
+    left: 22rem;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 22rem);
+    min-width: 80.4rem;
+    height: 100%;
+    min-height: 100vh;
+}
+  
+
+.mainContentsContainer{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 6rem);
+    height: calc(100% - 12rem);
+    min-height: calc(100vh - 12rem);
+    padding:3rem
+}

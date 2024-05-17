@@ -1,0 +1,162 @@
+<!-- jinuk_form.html -->
+<!Doctype>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차량 관리</title>
+    <link href="/static/css/jinuk_form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1>차량 관리</h1>
+        <button class="addVehicle" >차량 등록</button>
+        <form method="post" action="/vehicles/" class="vehicleListForm">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="delete">
+            <table>
+                <thead>
+                    <tr>
+                        <th>선택</th>
+                        <th>차량 번호</th>
+                        <th>제조사</th>
+                        <th>차량 이름</th>
+                        <th>운전기사</th>
+                        <th>모델 연도</th>
+                        <th>출고일자</th>
+                        <th>삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!-- Vehicle Data Read -->
+                    {% for vehicle in vehicles %}
+                    <tr>
+                        <td><input type="checkbox" name="vehicle_id" value="{{ vehicle.vehicle_id }}"></td>
+                        <td>{{ vehicle.vehicle_num0 }}-{{ vehicle.vehicle_num }}</td>
+                        <td>{{ vehicle.maker }}</td>
+                        <td>{{ vehicle.vehicle_type }}</td>
+                        <td>{{ vehicle.driver }}</td>
+                        <td>{{ vehicle.model_year }}</td>
+                        <td>{{ vehicle.release_date }}</td>
+                        <td><input type="submit" value="삭제"></td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </form>
+        
+        <!--차량 등록 클릭시 팝업창(차량 데이터 입력 후 등록)-->
+        <div class="popupAreaModules" style="display: none;">
+            <div class="popupBgModules"></div>
+            <form method="post" action="/vehicles/" class="popupContainer popupContainerDouble vehicleCreateForm" enctype="multipart/form-data">
+                {% csrf_token %}
+                
+                <input type="hidden" name="action" value="add">
+                <div class="popupHeader">
+                    <div class="popupTitle">차량 등록</div>
+                </div>
+                <div class="popupBody">
+                    <div class="popupSection">
+                        <div class="popupArticleBox">
+                            <div class="popupArticleDouble">
+                                <label><span class="importantStar">*</span>차량 번호</label>
+                                <input name="vehicle_num0" type="text" class="popupArticleinputTwice length100 essential">
+                                <input name="vehicle_num" type="text" class="popupArticleinputTwice length100 essential">
+                            </div>
+                            <div class="popupArticleDouble">
+                                <label>담당기사</label>
+                                <input name="driver" type="text" class="popupArticleinput">
+                            </div>
+                        </div>
+                        <div class="popupArticleBox">
+                            <div class="popupArticleDouble">
+                                <label>제조사</label>
+                                <input name="maker" type="text" class="popupArticleinput length100">
+                            </div>
+                            <div class="popupArticleDouble">
+                                <label>사용 여부</label>
+                                <input type="radio" name="use" value="사용" checked>사용
+                                <input type="radio" name="use" value="미사용">미사용
+                            </div>
+                        </div>
+                        <div class="popupArticleBox">
+                            <div class="popupArticleDouble">
+                                <label>차량 이름</label>
+                                <input name="vehicle_type" type="text" class="popupArticleinput length100">
+                            </div>
+                            <div class="popupArticleDouble">
+                                <label>승차 인원</label>
+                                <input name="passenger_num" type="number" class="popupArticleinput length100">
+                            </div>
+                        </div>
+                        <div class="popupArticleBox">
+                            <div class="popupArticleDouble">
+                                <label>형식</label>
+                                <input name="type" type="text" class="popupArticleinput length100">
+                            </div>
+                            <div class="popupArticleDouble">
+                                <label>모델 연도</label>
+                                <input name="model_year" type="number" class="popupArticleinput length100">
+                            </div>
+                        </div>
+                        <div class="popupArticleBox">
+                            <div class="popupArticleDouble">
+                                <label>차대번호</label>
+                                <input name="vehicle_id" type="text" class="popupArticleinput length100">
+                            </div>
+                            <div class="popupArticleDouble">
+                                <label>출고일자</label>
+                                <input name="release_date" type="date" class="popupArticleinput" max="9999-12-31">
+                            </div>
+                        </div>
+                        <div class="popupArticleBox">
+                            <div class="popupArticleDouble">
+                                <label>원동기 형식</label>
+                                <input name="motor_type" type="text" class="popupArticleinput length100">
+                            </div>
+                            <div class="popupArticleDouble">
+                                <label>정격 출력</label>
+                                <input name="rated_output" type="text" class="popupArticleinput length100">
+                            </div>
+                        </div>
+                        <div class="popupArticleBox">
+                            <div class="popupArticleDouble">
+                                <label>정기 점검일</label>
+                                <input name="check_date" type="date" class="popupArticleinput" max="9999-12-31">
+                            </div>
+                            <div class="popupArticleDouble">
+                                <label>차량 등록증</label>
+                                <input name="vehicle_registration" type="text" class="popupArticleinput length100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="popupFooter">
+                    <input type="submit" value="등록" class="btnModules createBtn">
+                    <button type="button" class="btnModules closeBtn">닫기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var addButton = document.querySelector('.addVehicle'); // 차량 등록 버튼 가져오기
+            var popup = document.querySelector('.popupAreaModules'); // 팝업 창 가져오기
+            var closeButton = document.querySelector('.closeBtn'); //닫기 버튼 가져오기
+
+            addButton.addEventListener('click', function () {
+                popup.style.display = 'block'; //팝업 창 열기
+            });
+
+            closeButton.addEventListener('click', function () {
+                popup.style.display = 'none'; //팝업창 닫기
+            });
+        });
+    </script>
+</body>
+</html>

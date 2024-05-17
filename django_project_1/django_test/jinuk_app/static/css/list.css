@@ -1,0 +1,186 @@
+.searchAreaRight {
+    display: flex;
+}
+
+.FilterBox select {
+    width: 10rem;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.FilterBox input{
+    margin-right: 1rem;
+}
+
+.searchTool input[type=submit] {
+    background-color: #444444;
+}
+
+select[name=use]{
+    margin-left: 2rem;
+}
+
+.searchAreaBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3.8rem;
+    border-radius: 0.2rem;
+    background-color: #444444;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.addVehicle {
+    background-color: #0069D9;
+}
+
+.headerLine {
+    width: 100%;
+    height: 3.6rem;
+    border-spacing: 0;
+    background-color: #fff; /* 헤더 배경 흰색 */
+    color: black; /* 텍스트 색상 검은색 */
+}
+
+.tableHead {
+    width: 100%;
+    background-color: white;
+}
+
+.tableHead thead {
+    width: 100%;
+}
+
+.tableHead tr {
+    height: 6.2rem;
+    border-bottom: 0.1rem solid #CDCDCE;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.tableHead td {
+    color: black; /* 텍스트 색상 검은색 */
+    background-color: #fff; /* 배경 흰색 */
+}
+
+.bodyLine tr:nth-child(odd) {
+    background-color: #fff; /* 홀수 행 배경 흰색 */
+}
+
+.bodyLine tr:nth-child(even) {
+    background-color: #EFEFEF; /* 짝수 행 배경 회색 */
+}
+
+.bodyLine td {
+    font-size: 1.4rem;
+    color: black; /* 텍스트 색상 검은색 */
+    background-color: white; /* 배경 흰색 */
+    border-right: 0.1rem solid #D4D4D4;
+    border-bottom: 0.1rem solid #D4D4D4;
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+/* 특정 열에 대한 스타일 설정 */
+.bodyLine td:nth-child(3),
+.bodyLine td:nth-child(13) {
+    color: #0069D9; /* 파란색 텍스트 */
+    cursor: pointer; /* 포인터 커서 */
+}
+
+/* 열 너비 설정 */
+td:nth-child(1),
+td:nth-child(2) {
+    width: 3%;
+}
+
+td:nth-child(3) {
+    width: 8%;
+}
+
+td:nth-child(4) {
+    width: 6%;
+}
+
+td:nth-child(5),
+td:nth-child(11),
+td:nth-child(12) {
+    width: 7%;
+}
+
+td:nth-child(6) {
+    justify-content: center;
+    width: 10%;
+}
+
+td:nth-child(7) {
+    width: 4%;
+}
+
+td:nth-child(8),
+td:nth-child(10) {
+    width: 13%;
+}
+
+td:nth-child(9),
+td:nth-child(14) {
+    width: 5%;
+}
+
+td:nth-child(13) {
+    width: 10%;
+}
+
+
+.btnBox input{
+    background-color: #444444;
+}
+
+
+.vehicleNumBox{
+    display: flex;
+    justify-content: space-between;
+    width: 27rem;
+}
+.popupArticleinputTwice{
+    width: 12.4rem;
+    height: 2.4rem;
+    border: 0.1rem solid #CDCDCE;
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+.popupSectionEdit{
+    display: none;
+}
+
+.popupFooterDetail .createBtn{
+    display: none;
+}
+
+.vehicleNumBox .PopupData{
+    width: 13rem;
+}
+
+.editBtn{
+    background-color: #0069D9;
+    margin-right: 1rem;
+}
+
+.blanckTr{
+    width: 100%;
+    height: 100%;
+}
+
+.albleRadioBox{
+    width: calc(100% - 9rem);
+}
+
+.albleRadioBox label{
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}

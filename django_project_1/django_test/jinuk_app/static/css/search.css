@@ -1,0 +1,124 @@
+/*Main Content
+- searchAreaBox,
+- searchAreaRight,*/
+
+.searchAreaBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 2rem);
+    height: 5.8rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border: 0.1rem solid #cdcdcd;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.16);
+}
+
+.searchAreaBox form {
+    height: 100%;
+}
+
+.searchTool{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.searchName{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    color: #191919;
+}
+
+.FilterBox select{
+    width: 10rem;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.FilterBox input{
+    margin-right: 1rem;
+}
+
+
+.searchTool select{
+    height: 2.5rem;
+}
+select[name=use]{
+    margin-left: 2rem;
+}
+
+
+.searchTool input{
+    height: 2.3rem;
+    padding: 0;
+    padding-left: 1rem;
+    border: 0.1rem solid #d2d2d2;
+    border-radius: 0.2rem;
+    font-size: 1.4rem;
+    color: #191919;
+    margin-right: 1rem;
+    outline: none;
+    text-align: center;
+}
+.searchTool input[type=submit] {
+    background-color: #444444;
+    color: white;
+    text-align: center;
+}
+
+.inputModules {
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: white;
+    border: 0.1rem solid #D2D2D2;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    color: #191919;
+}
+
+.btnModules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 6rem;
+    height: 2.5rem;
+    padding: 0 1.2rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+  }
+
+
+.searchAreaRight {
+    display: flex;
+}
+
+.searchAreaBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3.8rem;
+    border-radius: 0.2rem;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.addVehicle {
+    background-color: #0069D9;
+}

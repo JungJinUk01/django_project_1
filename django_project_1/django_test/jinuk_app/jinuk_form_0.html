@@ -1,0 +1,1050 @@
+<!-- trp 참고한 웹 사이트-->
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test</title>
+        <link href="setting.css" rel="stylesheet" type="text/css">
+        <link href="base.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="/image/tilteIcon.png?v=0.1236">
+        
+        <meta http-equiv="Cache-Control" content="private, no-cache, no-store, max-age=0, must-revalidate">
+        
+        <link rel="stylesheet" href="list.css" type="text/css">
+        <link rel="stylesheet" href="pagination.css" type="text/css">
+        
+            
+            
+        <meta http-equiv="Cache-Control" content="private, no-cache, no-store, max-age=0, must-revalidate">
+        <!--
+        Cache-Control 메타 태그 설정:
+        - private: 응답이 개인적으로 사용되어야 함을 나타냄. 즉, 공유 캐시에 저장되어서는 안됨.
+        - no-cache: 캐시된 복사본을 사용하기 전에 원 서버로부터 검증을 받아야 함을 지시함.
+        - no-store: 정보가 디스크에 저장되지 않도록 함. 민감한 정보가 포함된 페이지에 유용.
+        - max-age=0: 캐시에 저장된 복사본이 즉시 만료되어야 함을 의미함.
+        - must-revalidate: 캐시된 응답이 만료된 후, 원 서버로부터의 명시적인 재검증 없이 사용되어서는 안됨.
+        이 태그는 브라우저가 페이지를 캐시하지 않도록 하여 사용자가 항상 서버로부터 최신 정보를 받도록 강제함.
+        -->
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1169.0" data-gr-ext-installed="">
+        
+        <div class="trp">
+            
+            <!--사이드 메뉴-->
+            <div class="Sidemenu">
+                
+                <!--사이드 메뉴 로고-->
+                <div class="logoBox">
+                    <a href="/service" style="color: white; font-size: 4rem;">TEST</a>
+                    <!--TEST 클릭 시 service로 이동-->
+                </div>
+
+                <!--사이드 메뉴 앵커-->
+                <div class="sideMenuNav">
+                    
+                    <ul class="sideMenuNav1">
+                        
+                        <!--1번 앵커: 일정-->
+                        <div class="nav1Box" style="background-color: rgb(28, 28, 78);">
+                            <li class="nav1BoxMenu">
+                                <img class="nav1BoxMenuImg" src="/django_test/jinuk_app/image/calendar.png" alt="일정 아이콘">
+                                <a href="/service" class="nonDepth2Menu">일정</a>
+                            </li>
+                        </div>
+                        
+                        
+                        <!--2번 앵커: 공지사항-->
+                        <div class="nav1Box" style="background-color:  rgb(28, 28, 78);">
+                            <li class="nav1BoxMenu nav1BoxMenuHaveDepth2">
+                                <img class="nav1BoxMenuImg" src="/django_test/jinuk_app/image/notice.png" alt="공지사항 아이콘">
+                                <div>공지사항</div>
+                                <svg class="sideMenuArrow" xmlns="http://www.w3.org/2000/svg" width="18.228" height="11.84" viewBox="0 0 18.228 11.84">
+                                    <path id="패스_256" data-name="패스 256" d="M0,0,6.753,8.223,14,0" transform="translate(2.111 2.117)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>        
+                            </li>
+                            <!--2번 앵커의 하위 앵커-->
+                            <div class="sideMenuNav2Box">
+                                <ul class="sideMenuNav2">
+                                    <!--하위앵커: 기사님 공지사항 -->
+                                    <a href="/notice/driver" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">기사님 공지사항</li>
+                                    </a>
+                                    <!--하위앵커: 사무실 공지사항 -->
+                                    <a href="/notice/office" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">사무실 공지사항</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                        <!--3번 앵커: 배차관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu nav1BoxMenuHaveDepth2">
+                                <img class="nav1BoxMenuImg" src="/static/images/dispatchSystem.png?v=0.1236" alt="배차시스템 아이콘">
+                                <div>배차관리</div>
+                                <svg class="sideMenuArrow" xmlns="http://www.w3.org/2000/svg" width="18.228" height="11.84" viewBox="0 0 18.228 11.84">
+                                    <path id="패스_256" data-name="패스 256" d="M0,0,6.753,8.223,14,0" transform="translate(2.111 2.117)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>            
+                            </li>
+                            <!--3번 앵커의 하위앵커-->
+                            <div class="sideMenuNav2Box">
+                                <ul class="sideMenuNav2">
+                                    
+                                    <!--하위 앵커: 일반배차-->
+                                    <a href="/dispatch/order" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">일반배차</li>
+                                    </a>
+                                    
+                                    <!--하위 앵커: 출/퇴근배차-->
+                                    <a href="/dispatch/regularly" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">출/퇴근배차</li>
+                                    </a>
+                                    
+                                    <!--하위 앵커: 출/퇴근 노션관리-->
+                                    <a href="/dispatch/regularly/route" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">출/퇴근 노선관리</li>
+                                    </a>
+                                    
+                                    <!--하위 앵커: 출/퇴근 노선숙지-->
+                                    <a href="/dispatch/regularly/route/know" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">출/퇴근 노선숙지</li>
+                                    </a>
+                                    
+                                    <!--하위 앵커: 운행/배차확인-->
+                                    <a href="/dispatch/schedule" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">운행/배차확인</li>
+                                    </a>
+                                    
+                                    <!--하위 앵커: 배차거부관리-->
+                                    <a href="/dispatch/refusal" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">배차거부관리</li>
+                                    </a>
+                                    
+                                    <!--하위 앵커: 운행일보-->
+                                    <a href="/dispatch/driving" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">운행일보</li>
+                                    </a>
+                                    
+                                    <!--출/퇴근 배차표-->
+                                    <a href="/dispatch/regularly/connect" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">출/퇴근 배차표</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                                    
+
+                        <!--4번 앵커: 업무관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu nav1BoxMenuHaveDepth2">
+                                <svg class="nav1BoxMenuImg" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <div>업무관리</div>
+                                <svg class="sideMenuArrow" xmlns="http://www.w3.org/2000/svg" width="18.228" height="11.84" viewBox="0 0 18.228 11.84">
+                                    <path id="패스_256" data-name="패스 256" d="M0,0,6.753,8.223,14,0" transform="translate(2.111 2.117)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>        
+                            </li>
+                            
+                            <!--4번 앵커의 하위앵커-->
+                            <div class="sideMenuNav2Box">
+                                <ul class="sideMenuNav2">
+                                    
+                                    <!--하위앵커: 일반업무관리-->
+                                    <a href="/assignment/temporary" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">일반업무관리</li>
+                                    </a>
+                                    
+                                    <!--고정업무배정-->
+                                    <a href="/assignment/" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">고정업무배정</li>
+                                    </a>
+                                    
+                                    <!--고정업무관리-->
+                                    <a href="/assignment/data" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">고정업무관리</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!--5번 앵커: 인사관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu nav1BoxMenuHaveDepth2">
+                                <img class="nav1BoxMenuImg" src="/static/images/HRManagement.png?v=0.1236" alt="인사관리 아이콘">
+                                <div>인사관리</div>
+                                <svg class="sideMenuArrow" xmlns="http://www.w3.org/2000/svg" width="18.228" height="11.84" viewBox="0 0 18.228 11.84">
+                                    <path id="패스_256" data-name="패스 256" d="M0,0,6.753,8.223,14,0" transform="translate(2.111 2.117)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>        
+                            </li>
+                            
+                            <!--5번 앵커의 하위앵커-->
+                            <div class="sideMenuNav2Box">
+                                <ul class="sideMenuNav2">
+
+                                    <!--하위 앵커: 직원관리-->
+                                    <a href="/HR/member" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">직원관리</li>
+                                    </a>
+
+                                    <!--하위 앵커: 급여관리(현재)-->
+                                    <a href="/HR/salary" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">급여관리(현재)</li>
+                                    </a>
+
+                                    <!--하위 앵커: 급여관리(변경)-->
+                                    <a href="/HR/salary/change" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">급여관리(변경)</li>
+                                    </a>
+
+                                    <!--하위 앵커: 급여관리(용역)-->
+                                    <a href="/HR/salary/outsourcing" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">급여관리(용역)</li>
+                                    </a>
+
+                                    <!--하위앵커: 급여관리(관리자)-->
+                                    <a href="/HR/salary/manager" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">급여관리(관리자)</li>
+                                    </a>
+                                    
+                                    <!--팀관리-->
+                                    <a href="/HR/team" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">팀관리</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!--6번 앵커: 매출관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu nav1BoxMenuHaveDepth2">
+                                <img class="nav1BoxMenuImg" src="/static/images/accountingSystem.png?v=0.1236" alt="경리시스템 아이콘">
+                                <div>매출관리</div>
+                                <svg class="sideMenuArrow" xmlns="http://www.w3.org/2000/svg" width="18.228" height="11.84" viewBox="0 0 18.228 11.84">
+                                    <path id="패스_256" data-name="패스 256" d="M0,0,6.753,8.223,14,0" transform="translate(2.111 2.117)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>        
+                            </li>
+                            
+                            <!--6번 앵커의 하위 앵커-->
+                            <div class="sideMenuNav2Box">
+                                <ul class="sideMenuNav2">
+
+                                    <!--하위 앵커: 매출현황-->
+                                    <a href="/accounting/sales" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">매출현황</li>
+                                    </a>
+                                    
+                                    <!--하위 앵커: 입금관리-->
+                                    <a href="/accounting/deposit" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">입금관리</li>
+                                    </a>
+
+                                    <!--하위 앵커: 일반 수금관리-->
+                                    <a href="/accounting/collect" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">일반 수금관리</li>
+                                    </a>
+
+                                    <!--하위 앵커: 출/퇴근 수금관리-->
+                                    <a href="/accounting/regularly/collect" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">출/퇴근 수금관리</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!--7번 앵커: 차량관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu nav1BoxMenuHaveDepth2">
+                                <img class="nav1BoxMenuImg" src="/static/images/vehicleManagement.png?v=0.1236" alt="차량관리 아이콘">
+                                <div>차량관리</div>
+                                <svg class="sideMenuArrow" xmlns="http://www.w3.org/2000/svg" width="18.228" height="11.84" viewBox="0 0 18.228 11.84">
+                                    <path id="패스_256" data-name="패스 256" d="M0,0,6.753,8.223,14,0" transform="translate(2.111 2.117)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>        
+                            </li>
+                            
+                            <!--7번 앵커의 하위 앵커-->
+                            <div class="sideMenuNav2Box">
+                                <ul class="sideMenuNav2">
+
+                                    <!--하위앵커: 차량관리-->
+                                    <a href="/vehicle/list" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">차량관리</li>
+                                    </a>
+                                    
+                                    <!--하위앵커: 주유관리-->
+                                    <a href="/vehicle/refueling" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">주유관리</li>
+                                    </a>
+
+                                    <!--하위앵커: 일일점검-->
+                                    <a href="/vehicle/dailychecklist" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">일일점검</li>
+                                    </a>
+
+                                    <!--하위앵커: 주간점검-->
+                                    <a href="/vehicle/weeklychecklist" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">주간점검</li>
+                                    </a>
+
+                                    <!--하위앵커: 비품점검-->
+                                    <a href="/vehicle/equipmentchecklist" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">비품점검</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!--8번 앵커: 서류관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu nav1BoxMenuHaveDepth2">
+                                <img class="nav1BoxMenuImg" src="/static/images/document.png?v=0.1236" alt="공지사항 아이콘">
+                                <div>서류관리</div>
+                                <svg class="sideMenuArrow" xmlns="http://www.w3.org/2000/svg" width="18.228" height="11.84" viewBox="0 0 18.228 11.84">
+                                    <path id="패스_256" data-name="패스 256" d="M0,0,6.753,8.223,14,0" transform="translate(2.111 2.117)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>        
+                            </li>
+
+                            <!--8번 앵커의 하위앵커-->
+                            <div class="sideMenuNav2Box">
+                                <ul class="sideMenuNav2">
+
+                                    <!--하위앵커: 회사서류-->
+                                    <a href="/document/company" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">회사서류</li>
+                                    </a>
+
+                                    <!--하위앵커: 운행서류-->
+                                    <a href="/document/dispatch" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">운행서류</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!--9번 앵커: 민원관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu nav1BoxMenuHaveDepth2">
+                                <img class="nav1BoxMenuImg" src="/static/images/document.png?v=0.1236" alt="공지사항 아이콘">
+                                <div>민원관리</div>
+                                <svg class="sideMenuArrow" xmlns="http://www.w3.org/2000/svg" width="18.228" height="11.84" viewBox="0 0 18.228 11.84">
+                                    <path id="패스_256" data-name="패스 256" d="M0,0,6.753,8.223,14,0" transform="translate(2.111 2.117)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>        
+                            </li>
+
+                            <!--9번 앵커의 하위앵커-->
+                            <div class="sideMenuNav2Box">
+                                <ul class="sideMenuNav2">
+                                    
+                                    <!--하위앵커: 상담신청관리-->
+                                    <a href="/complaint/consulting" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">상담신청관리</li>
+                                    </a>
+
+                                    <!--하위앵커: 차량정비신청관리-->
+                                    <a href="/complaint/inspection" class="sideMenuNav2Link">
+                                        <li class="sideMenuNav2Menu">차량정비신청관리</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!--10번 앵커: 거래처 관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu">
+                                <img class="nav1BoxMenuImg" src="/static/images/calendar.png?v=0.1236" alt="일정 아이콘">
+                                <a href="/member/setting/client" class="nonDepth2Menu">거래처 관리</a>
+                            </li>
+                        </div>
+
+
+                        <!--11번 앵커: 항목 관리-->
+                        <div class="nav1Box" style="background-color: rgb(28, 26, 78);">
+                            <li class="nav1BoxMenu">
+                                <img class="nav1BoxMenuImg" src="/static/images/calendar.png?v=0.1236" alt="일정 아이콘">
+                                <a href="/member/setting" class="nonDepth2Menu">항목 관리</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!--사이드 메뉴 끝-->
+
+            <!--trp main container-->
+            <div class="MainContainer">
+                
+                <!--trp header-->
+                <div class="Header">
+
+                    <!--trp header title-->
+                    <div class="HeaderTitle">차량관리</div>
+
+                    <!--trp Header Profile-->
+                    <div class="profile">
+                        <span class="userName">관리자</span>
+                        <div>
+                            <span>님</span>
+                            <img src="/django_test/jinuk_app/image/profileArrow.png" alt="아래 화살표 아이콘">
+                        </div>
+                    </div>
+                    
+                    <div class="profileBox" style="display: none;">
+                        <!--아이디 변경-->
+                        <div class="profileMenuCell">
+                            <img src="/django_test/jinuk_app/image/createUserIcon.png" alt="설정 아이콘">
+                            <span class="profileMenuName">아이디 변경</span>
+                        </div>
+                        
+                        <!--비밀번호 변경-->
+                        <div class="profileMenuCell">
+                            <img src="/django_test/jinuk_app/image/passwordIcon.png" alt="비밀번호 아이콘">
+                            <span class="profileMenuName">비밀번호 변경</span>
+                        </div>
+                        
+                        <!--로그아웃-->
+                        <div class="profileMenuCell">
+                            <a href="/member/logout"></a>
+                            <img src="/django_test/jinuk_app/image/logoutIcon.png" alt="로그아웃">
+                            <span class="profileMenuName">로그아웃</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--trp contents container-->
+                <div class="mainContentsCentainer">
+                    
+                    <!--검색 박스-->
+                    <div class="searchAreaBox">
+                        <form action="">
+                            <div class="searchTool">
+                                <span class="searchName">검색종류</span>
+                                <div class="FilterBox">
+
+                                    <!--검색 옵션-->
+                                    <select name="select" class="inputModules">
+                                        <option value="vehicle">차량번호</option>
+                                        <option value="driver">담당기사</option>
+                                        <option value="passenger">승차인원</option>
+                                    </select>
+                                    <!--검색(입력)-->
+                                    <input autocomplete="off" value="" name="search" type="text" class="inputModules" list="hrFilter">
+                                    <datalist id="hrFilter"></datalist>
+                                    
+                                    <select name="use" class="inputModules">
+                                        <option selected="" value="사용">사용</option>
+                                        <option value="미사용">미사용</option>
+                                    </select>
+                                </div>
+                                
+                                <input autocomplete="off" type="submit" value="검색" class="btnModules">
+                            </div>
+                        </form>
+                        <div class="searchAreaRight">
+                            <div class="searchAreaBtn addVehicle">차량등록</div>
+                        </div>
+                    </div>
+                    
+                    
+                   <!-- 차량 관리를 위한 HTML 폼. 폼 제출 시 POST 메서드를 사용하여 /vehicle/list/delete 경로로 데이터를 전송 -->
+                    <form method="post" action="/vehicle/list/delete" class="vehicleListForm">
+
+                        <!-- CSRF 보호를 위한 히든 필드. Django에서 자동 생성되며 폼 제출 시 서버에서 검증됨 -->
+                        <input type="hidden" name="csrfmiddlewaretoken" value="yJ81iwNUcQbYpxgHUyybevRK5uTmgdxP1wIp7uP2fR4WUf72ZUo6gEmoHwot9F4U">
+                        
+                        <!-- 테이블 헤더: 차량 목록을 보여주는 테이블의 열 제목들을 정의 -->
+                        <div class="contentsAreaBox">
+                            <table class="tableHead">
+                                <thead>
+                                    <tr class="headerLine">
+                                        <td>선택</td>
+                                        <td>순번</td>
+                                        <td>차량번호</td>
+                                        <td>담당기사</td>
+                                        <td>제조사</td>
+                                        <td>차량이름</td>
+                                        <td>승차인원</td>
+                                        <td>형식</td>
+                                        <td>모델연도</td>
+                                        <td>차대번호</td>
+                                        <td>출고일자</td>
+                                        <td>정기점검일</td>
+                                        <td>차량등록증</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                            
+                            <!-- 테이블 바디: 서버에서 받은 차량 데이터를 행별로 표시. 실제 데이터는 서버에서 불러와서 각 행에 표시됨 -->
+                            <table class="tableBody">
+                                <tbody>
+                                    <!-- 차량 등록증을 보는 링크. 클릭 시 해당 차량의 등록증 이미지를 새 창에서 보여주는 JavaScript 함수 호출 -->
+                                    <div onclick="openViweBlankVehilcle('/vehicle/list/image/230')">test.jpg</div>
+                                    <tr class="blanckTr"></tr>
+                                </tbody>
+                            </table>
+                            
+                            <!-- 페이징 처리 영역: 사용자가 페이지를 넘겨서 추가 데이터를 볼 수 있도록 페이징 링크 제공 -->
+                            <div class="btnAreaBox">
+                                
+                                <!--페이징 처리-->
+                                <div class="pagination">
+                                    
+                                    <div class="pagination">
+                                        
+                                        <div class="page-item page-pre disabled">
+                                            <a class="page-link" href="#" tabindex="-1">이전</a>
+                                        </div>
+                                    
+                                        <div class="page-item  page-activate ">
+                                            <a class="page-link" href="?select=&amp;search=&amp;page=1&amp;use=사용">1</a>
+                                        </div>
+                                        <!-- 페이지 번호: 사용자가 다른 페이지 번호를 클릭할 수 있음 -->
+                                        
+                                        <!-- ... 추가 페이지 링크 ... -->
+                                        <div class="page-item ">
+                                            <a class="page-link" href="?select=&amp;search=&amp;page=2&amp;use=사용">2</a>
+                                        </div>
+                                        
+                                        <div class="page-item ">
+                                            <a class="page-link" href="?select=&amp;search=&amp;page=3&amp;use=사용">3</a>
+                                        </div>
+                                        
+                                        <div class="page-item ">
+                                            <a class="page-link" href="?select=&amp;search=&amp;page=4&amp;use=사용">4</a>
+                                        </div>
+                                        
+                                        <div class="page-item ">
+                                            <a class="page-link" href="?select=&amp;search=&amp;page=5&amp;use=사용">5</a>
+                                        </div>
+                                        
+            
+                                        <div class="page-item">
+                                            <a class="page-link page-next" href="?select=&amp;search=&amp;page=2&amp;use=사용">다음</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--삭제 버튼: 선택된 차량을 삭제할 수 있는 버튼-->
+                                <div class="btnBox">
+                                    <input autocomplete="off" type="submit" value="삭제" class="btnModules">
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                
+                <!--팝업 영역을 정의하는 최상위 컨테이너-->
+                <div class="popupAreaModules" style="display: none;">
+                    
+                    <!--팝업 배경을 표현하는 부분, 클릭 시 팝업을 닫을 수 있는 기능을 제공함-->
+                    <div class="popupBgModules"></div>
+                    
+                    <!--폼 데이터를 url로 post 방식으로 제출-->
+                    <form method="post" action="/vehicle/list/create" class="popupContainer popupContainerDouble vehicleCreateForm" enctype="multipart/form-data">
+                        
+                        <!--csrf 보흐를 위한 hidden 필드-->
+                        <input type="hidden" name="csrfmiddlewaretoken" value="yJ81iwNUcQbYpxgHUyybevRK5uTmgdxP1wIp7uP2fR4WUf72ZUo6gEmoHwot9F4U">
+                        
+                        <!--팝업의 헤더 부분: 차량등록-->
+                        <div class="popupHeader">
+                            <div class="popupTitle">차량등록</div>
+                        </div>
+
+                        <!--팝업의 본문 필드-->
+                        <div class="popupBody">
+
+                            <!--팝업 섹션, 여러 입력 필드 포함하는 컨테이너-->
+                            <div class="popupSection">
+
+                                <!--입력 필드를 묶은 박스, 차량 번호 입력-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">
+                                            <span class="importantStar">*</span>차량번호
+                                        </label>
+                                        <div class="vehicleNumBox">
+                                            <input autocomplete="off" name="vehicle_num0" type="text" class="popupArticleinputTwice length100 essential">
+                                            <input autocomplete="off" name="vehicle_num" type="text" class="popupArticleinputTwice length100 essential">
+                                        </div>
+                                    </div>
+
+                                    <!-- 담당 기사 선택을 위한 드롭다운 메뉴-->
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">담당기사</label>
+                                        <select name="driver" class="popupArticleinput">
+                                            <option></option>
+                                            <!--기사 목록 드롭다운 메뉴-->
+                                            <option value="417">test</option>
+                                            
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <!--제조사 및 사용 여부 입력 필드를 포합하는 박스-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">제조사</label>
+                                        <input autocomplete="off" name="maker" type="text" class="popupArticleinput length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">사용여부</label>
+                                        <div class="albleRadioBox">
+                                            <input autocomplete="off" type="radio" value="사용" id="ableBus" name="use" checked="">
+                                            <label for="ableBus">사용</label>
+                                            <input autocomplete="off" type="radio" value="미사용" id="disableBus" name="use">
+                                            <label for="disableBus">미사용</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--차량 이름 및 승차 인원 입력 필드-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차량이름</label>
+                                        <input autocomplete="off" name="vehicle_type" type="text" class="popupArticleinput length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">승차인원</label>
+                                        <input autocomplete="off" name="passenger_num" type="number" class="popupArticleinput length100">
+                                    </div>
+                                </div>
+
+                                <!--형식, 모델연도 입력 필드-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">형식</label>
+                                        <input autocomplete="off" name="type" type="text" class="popupArticleinput length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">모델연도</label>
+                                        <input autocomplete="off" name="model_year" type="number" class="popupArticleinput length100">
+                                    </div>
+                                </div>
+
+                                <!--차대번호 및 출고일자 입력 필드-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차대번호</label>
+                                        <input autocomplete="off" name="vehicle_id" type="text" class="popupArticleinput length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">출고일자</label>
+                                        <input autocomplete="off" name="release_date" type="date" class="popupArticleinput" max="9999-12-31">
+                                    </div>
+                                </div>
+
+                                <!--원동기 형식 및 정격출력 입력 필드-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">원동기형식</label>
+                                        <input autocomplete="off" name="motor_type" type="text" class="popupArticleinput length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">정격출력</label>
+                                        <input autocomplete="off" name="rated_output" type="text" class="popupArticleinput length100">
+                                    </div>
+                                </div>
+
+                                <!--정기점검일 및 차량등록증 파일 입력 필드-->
+                                <div class="popupArticleBox">
+
+                                    <!--정기 점검일 입력 필드-->
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">정기점검일</label>
+                                        <input autocomplete="off" name="check_date" type="date" class="popupArticleinput" max="9999-12-31">
+                                    </div>
+
+                                    <!--차량 등록증 입력 필드-->
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차량등록증</label>
+                                        <div class="popupArticleFileDouble">
+                                            <label for="BusLicenseFile">파일 선택</label>
+                                            <input autocomplete="off" name="vehicle_registration" id="BusLicenseFile" type="file" class="popupArticleinput BusLicenseFileInput">
+                                            <input autocomplete="off" name="vehicle_registration_name" type="text" class="BusLicenseFileText" readonly="">
+                                            
+                                            <!--파일 삭제 버튼-->
+                                            <svg class="fileDeleteBtn" xmlns="http://www.w3.org/2000/svg" width="11.314" height="11.314" viewBox="0 0 11.314 11.314">
+                                                <g id="그룹_1513" data-name="그룹 1513" transform="translate(-442.649 -1001.97) rotate(45)">
+                                                    <line id="선_691" data-name="선 691" y2="12" transform="translate(1029.5 389.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"></line>
+                                                    <line id="선_692" data-name="선 692" y2="12" transform="translate(1035.5 395.5) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"></line>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--팝업의 푸터 부분, 등록 및 닫기 버튼 포함-->
+                            <div class="popupFooter">
+                                <div class="btnModules createBtn marginR1">등록</div>
+                                <div class="btnModules closeBtn">닫기</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                
+                <!--차량 등록 최상위 컨테이너-->
+                <div class="popupAreaModules" style="display: none;">
+
+                    <!--팝업의 배경 레이어, 보통 클릭 시 팝업을 닫을 수 있게 구현됨-->
+                    <div class="popupBgModules"></div>
+
+                    <!--차량 정보를 수정하기 위해 서버로 데이터를 post 방식으로 보내는 폼-->
+                    <form method="post" action="/manage_vehicles" class="popupContainer popupContainerDouble vehicleEditForm" enctype="multipart/form-data">
+
+                        <!--csrf 토큰을 포함하여 cross-site request frogery 공격을 방지-->
+                        <input type="hidden" name="csrfmiddlewaretoken" value="yJ81iwNUcQbYpxgHUyybevRK5uTmgdxP1wIp7uP2fR4WUf72ZUo6gEmoHwot9F4U">
+                        
+                        <!--팝업의 제목을 표시하는 부분-->
+                        <div class="popupHeader">
+                            <div class="popupTitle">차량상세</div>
+                        </div>
+
+                        <!--팝업 본문 영역, 여러 섹션으로 나누어 정보 입력을 구성-->
+                        <div class="popupBody">
+                            <!--상세 정보 입력을 위한 섹션, 차량 정보 표시 및 수정-->
+                            <div class="popupSection popupSectionDetail" style="display: flex;">
+                                <!--입력 항목을 그룹화하는 박스, 각 항목은 더블 컬럼으로 구성-->
+                                <div class="popupArticleBox">
+
+                                    <!--차량 번호 입력-->
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차량번호</label>
+                                        <div class="vehicleNumBox">
+                                            <!--기존 데이터 표시, 수정 시 사용자가 새 값을 입력-->
+                                            <div class="PopupData"></div>
+                                            <div class="PopupData"></div>
+                                        </div>
+                                    </div>
+
+                                    <!--담당 기사 선택-->
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">담당기사</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                </div>
+
+                                <!--제조사 및 사용여부 선택-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">제조사</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">사용여부</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                </div>
+
+                                <!--차량 이름 및 승차 인원 입력-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차량이름</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">승차인원</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                </div>
+
+                                <!--형식, 모델 연도 입력-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">형식</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">모델연도</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                </div>
+
+                                <!--차대 번호 및 출고일자 입력-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차대번호</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">출고일자</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                </div>
+                                
+                                <!--원동기식형식 및 정격출력-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">원동기형식</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">정격출력</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                </div>
+
+                                <!--정기점검일 및 차량등록증-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">정기점검일</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차량등록증</label>
+                                        <div class="PopupData"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="popupSection popupSectionEdit" style="display: none;">
+                                <div class="popupArticleBox">
+                                    <!--팝업의 각 홍목을 담는 박스, 여러 입력 필드를 그룹화 시킴-->
+                                    <div class="popupArticleDouble">
+                                        <!--차량 번호 입력 필드, 필수 입력 필드로 표시됨(별표)-->
+                                        <label for="" class="popupArticleLabel"><span class="importantStar">*</span>차량번호</label>
+                                        <div class="vehicleNumBox">
+                                            <input autocomplete="off" name="vehicle_num0" type="text" class="popupArticleinputTwice vehicleNum1 length100 essentialEdit">
+                                            <input autocomplete="off" name="vehicle_num" type="text" class="popupArticleinputTwice vehicleNum2 length100 essentialEdit">
+                                        </div>
+                                    </div>
+                                    <!--담당 기사 선택을 위한 드롭다운 메뉴-->
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">담당기사</label>
+                                        <select name="driver" class="popupArticleinput driver_name">
+                                            <option></option>
+                                            <!--추천 기사 옵션-->
+                                            
+                                            <option value="417">test</option>
+                                    
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!--제조사 및 사용 여부 입력 필드-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">제조사</label>
+                                        <input autocomplete="off" name="maker" type="text" class="popupArticleinput maker length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">사용여부</label>
+                                        <div class="albleRadioBox">
+                                            <input autocomplete="off" type="radio" id="ableBusEdit" name="use" value="사용">
+                                            <label for="ableBusEdit">사용</label>
+                                            <input autocomplete="off" type="radio" id="disableBusEdit" name="use" value="미사용">
+                                            <label for="disableBusEdit">미사용</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--차량 이름 및 승차 인원 입력 필드-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차량이름</label>
+                                        <input autocomplete="off " name="vehicle_type" type="text" class="popupArticleinput vehicle_type length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">승차인원</label>
+                                        <input autocomplete="off" name="passenger_num" type="number" class="popupArticleinput passenger_num length100">
+                                    </div>
+                                </div>
+
+                                <!--기타 차량 세부 정보 입력 필드(형식, 모델연도 등)-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">형식</label>
+                                        <input name="type" autocomplete="off" type="text" class="popupArticleinput type length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">모델연도</label>
+                                        <input autocomplete="off" name="model_year" type="number" class="popupArticleinput model_year length100">
+                                    </div>
+                                </div>
+
+                                <!--차대번호, 출고일자, 원동기형식, 정격출력 등의 입력 필드-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차대번호</label>
+                                        <input autocomplete="off" name="vehicle_id" type="text" class="popupArticleinput vehicle_id length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">출고일자</label>
+                                        <input autocomplete="off" name="release_date" type="date" class="popupArticleinput release_date" max="9999-12-31">
+                                    </div>
+                                </div>
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">원동기형식</label>
+                                        <input autocomplete="off" name="motor_type" type="text" class="popupArticleinput motor_type length100">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">정격출력</label>
+                                        <input autocomplete="off" name="rated_output" type="text" class="popupArticleinput rated_output length100">
+                                    </div>
+                                </div>
+
+                                <!--정기점검일 및 차량 등록증 파일 업로드 필드-->
+                                <div class="popupArticleBox">
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">정기점검일</label>
+                                        <input autocomplete="off" name="check_date" type="date" class="popupArticleinput checkdate" max="9999-12-31">
+                                    </div>
+                                    <div class="popupArticleDouble">
+                                        <label for="" class="popupArticleLabel">차량등록증</label>
+                                        <div class="popupArticleFileDouble">
+                                            <label for="BusLicenseFileEdit">파일 선택</label>
+                                            <input autocomplete="off" name="vehicle_registration" id="BusLicenseFileEdit" type="file" class="popupArticleinput BusLicenseFileInputEdit">
+                                            <input autocomplete="off" name="vehicle_registration_name" type="text" class="BusLicenseFileTextEdit" readonly="">
+                                            <svg class="fileDeleteBtn" xmlns="http://www.w3.org/2000/svg" width="11.314" height="11.314" viewBox="0 0 11.314 11.314">
+                                                <g id="그룹_1513" data-name="그룹 1513" transform="translate(-442.649 -1001.97) rotate(45)">
+                                                    <line id="선_691" data-name="선 691" y2="12" transform="translate(1029.5 389.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"></line>
+                                                    <line id="선_692" data-name="선 692" y2="12" transform="translate(1035.5 395.5) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"></line>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input autocomplete="off" type="hidden" value="" name="id" class="sendToHidden">
+                            </div>
+
+                            <!--팝업의 푸터, 버튼으로 구성된 영역: 등록, 수정, 닫기 버튼 포함-->
+                            <div class="popupFooter popupFooterDetail">
+                                <div class="btnModules createBtn" style="display: none;" onclick="submitVehicleCreateForm">등록</div>
+                                <div class="btnModules editBtn" style="display: flex;">수정</div>
+                                <div class="btnModules closeBtn">닫기</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!--팝업 모듈의 최상위 컨테이너-->
+                <div class="popupAreaModules" id="excelPopup" style="display: none;"></div>
+                
+                <!--아이디 비밀번호 변경-->
+                <div class="HomePopupAreaModules"></div>
+            
+            </div>
+
+            <!--비밀번호 변경-->
+            <div class="HomePopupAreaModules">
+
+            </div>
+        
+        </div>
+        
+        <script>
+            const AUTHORITY = 0
+            console.log('AUTHORITY', AUTHORITY)
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var addButton = document.querySelector('.addVehicle'); // 차량등록 버튼 선택
+            var popup = document.querySelector('.popupAreaModules'); // 팝업 창 선택
+        
+            addButton.addEventListener('click', function() {
+                popup.style.display = 'block'; // 팝업창을 보이게 설정
+            });
+        
+            var closeButton = document.querySelector('.closeBtn'); // 닫기 버튼 선택
+            closeButton.addEventListener('click', function() {
+                popup.style.display = 'none'; // 팝업창을 숨김
+            });
+        });
+
+        function submitVehicleCreateForm() {
+            const form = document.getElementById("vehicleCreateForm");
+            const formData = new FormData(form);
+
+            const payload = {
+                "action": "add",
+                "vehicle_num0": formData.get("vehicle_num0"),
+                "vehicle_num": formData.get("vehicle_num"),
+                "vehicle_id": formData.get("vehicle_id"),
+                "motor_type": formData.get("motor_type"),
+                "rated_output": formData.get("rated_output"),
+                "vehicle_type": formData.get("vehicle_type"),
+                "maker": formData.get("maker"),
+                "models_year": formData.get("models_year"),
+                "release_date": formData.get("release_date"),
+                "driver": formData.get("driver"),
+                "driver_id": formData.get("driver_id"),
+                "driver_name": formData.get("driver_name"),
+                "use": formData.get("use"),
+                "passenger_num": formData.get("passenger_num"),
+                "check_date": formData.get("check_date"),
+                "type": formData.get("type"),
+                "vehicle_registration": formData.get("vehicle_registration")
+            };
+
+            fetch('/manage_vehicles', {
+                method: 'POST',
+                body: new URLSearchParams(payload),
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "X-CSRFToken": getCookie('csrftoken')
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert('차량이 성공적으로 등록되었습니다.');
+                    closeVehicleCreatePopup();
+                    location.reload(); // 새로 고침하여 목록 업데이트
+                } else {
+                    alert(`차량 등록에 실패했습니다: ${data.message}`);
+                }
+            })
+            .catch(error => {
+                alert(`오류가 발생했습니다: ${error}`);
+            });
+        }
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+        return cookieValue;
+}
+
+        </script>
+        <!--  
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="/static/js/sideNavMenu.js?v=0.1236"></script>
+        <script src="/static/js/profile.js?v=0.1236"></script>
+        <script src="/static/js/accountPopup.js"></script>
+        <script src="/static/js/lengthbreak100.js?v=0.1236"></script>
+        <script src="/static/js/lengthbreak1000.js?v=0.1236"></script>
+        <script src="/static/js/lengthBreak3000.js?v=0.1236"></script>
+        <script>
+            let regDatas = {
+                
+            }
+            
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.5/xlsx.full.min.js"></script>
+        <script src="/static/js/vehicle/list.js?v=0.1236"></script>
+        -->
+
+    </body>
+</html>
